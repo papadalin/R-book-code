@@ -1,3 +1,5 @@
+states <- as.data.frame(state.x77[, c("Murder", "Population","Illiteracy","Income","Frost")])
+
 library(car)
 fit <- lm(Murder ~ Population + Illiteracy + Income + Frost, data = states)
 par(mfrow = c(1,1))

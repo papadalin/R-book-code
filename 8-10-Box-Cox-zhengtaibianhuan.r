@@ -1,3 +1,5 @@
+states <- as.data.frame(state.x77[, c("Murder", "Population","Illiteracy","Income","Frost")])
+
 library(car)
 summary(powerTransform(states$Murder))
 #jieguobiaoming ,keyi yong Murder^0.6 lai zhengtaihua bianliang Murder.
