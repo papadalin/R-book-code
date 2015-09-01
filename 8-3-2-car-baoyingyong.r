@@ -14,9 +14,16 @@ rstudent(fit)["Nevada"]#keyi faxian yuce moxing bi shiji xiaohenduo
 #Durbin-Watson-test : jianyan shifou you xulie xiangguanxing
 fit
 durbinWatsonTest(fit)
-#you p zhi jiaoxiao kanchu wu xiangguanxing
+#you p zhi jiaoxiao kanchu wu xiangguanxing   P201
+
 
 #chakan chengfen cancha tu
 crPlots(fit)
 
 # panduan wucha shifou hengding 
+ncvTest(fit)
+spreadLevelPlot(fit) #jianyi mi ci zhuanhuan wei 1.2, jiejin 1,buxuyao jinxing zhuanhuan
+#ruguo jianyi mici zhuanhuan wei 0.5,ze y zhuanhuan wei squar(y) jiu keneng rang
+#baochi tongfangchaxing 
+#ruguo jianyi mici zhuanhuan wei 2, name y zhuanhuan wei y^2,jiu keneng rang 
+#baochi tongfangcha xing
